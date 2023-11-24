@@ -1,19 +1,19 @@
 resource "google_storage_bucket" "bucket" {
-  name     = "test-bucket-gom-project-1234"
+  name     = "test-bucket-gomathi-project-1234"
   location = "europe-west2"
 }
 
 resource "google_storage_bucket" "gcs_bucket" {
-  name     = "test-bucket-gom-project-5678"
+  name     = "test-bucket-gomathi-project-5678"
   location = "europe-west2"
 }
 
 resource "google_compute_network" "vpc_network" {
-  name = "terraform-goms-network"
+  name = "terraform-gomathi-network"
 }
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-goms-instance"
+  name         = "terraform-gomathi-instance"
   machine_type = "f1-micro"
 
   boot_disk {
@@ -28,3 +28,4 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
 }
+
