@@ -9,11 +9,11 @@ resource "google_storage_bucket" "gcs_bucket" {
 }
 
 resource "google_compute_network" "vpc_network" {
-  name = "terraform-Gomathi-network"
+  name = "terraform-gomathi-network"
 }
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-Gomathi-instance"
+  name         = "terraform-gomathi-instance"
   machine_type = "f1-micro"
 
   boot_disk {
